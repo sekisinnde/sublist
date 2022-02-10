@@ -6,23 +6,11 @@ public class PartitionTwoDim {
 
     public static void main(String[] args) {
 
-        // {{1,2, {3, 4}, {5}}}
-        // out
-        // {1, 2}
-        // {3, 4}
-        // {5}
-        // [row] [col]
-        // C1 C2
-        // R1 1 2
-        // R2 3 4
-        // R3 5 0
-
         for (int[] a : partition(new int[] { 1, 2, 3, 4, 5 }, 2)) {
             System.out.println(Arrays.toString(a));
         }
     }
 
-    // thi is a two dimensional array
     public static int[][] partition(int arr[], int col) {
         int partition[][];
         int row;
